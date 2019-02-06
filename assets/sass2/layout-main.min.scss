@@ -1,0 +1,31 @@
+@import 'libs/variables';
+@import 'component/palette';
+@import 'libs/mixins';
+@import 'component/type';
+@import 'libs/gridset';
+@import 'component/buttons';
+@import 'component/footer';
+@import 'component/header';
+// @import 'component/nav'; // Will be called if another nav exist!
+@import 'libs/reset';
+
+
+// // /*All mobile*/
+@media screen and (min-width: 250px) {
+    @import 'views/mobile';
+    
+}
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    @import 'views/tablet'; 
+    
+}
+/*PC*/
+@media screen and (min-width: 992px) {
+    @import 'views/pc';
+}
+/* Large PC*/
+@media screen and (min-width: 1200px) {
+    @import 'views/large-pc';
+    
+}

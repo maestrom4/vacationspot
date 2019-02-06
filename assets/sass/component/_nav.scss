@@ -1,0 +1,29 @@
+.navbar {
+    background-color: palette(primary, dark);
+    .navbar-brand {
+        color: white;
+    }
+    .navbar-brand:hover {
+        color: palette(tertiary, base);
+    }
+    padding: 0;
+   
+}
+ul.navbar-nav {
+    li  {
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        line-height: 1.6;
+        padding: 1rem;
+    }
+    li:hover {
+        background: palette(primary, light);
+    }
+}
+header {
+    .nav-footer-bg {
+        margin-top: 3.3rem;
+    }
+}

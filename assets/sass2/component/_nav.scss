@@ -1,0 +1,44 @@
+// @import 'libs/variables';
+// @import 'libs/mixins';
+
+.navbar {
+    ul.navbar-nav {
+        &#menu-primary {
+            display: inline;
+            list-style: none;
+        }
+        li {
+            padding: 1rem .5rem;
+            /* responsify is the mixin version of @media file and location is at _mixins.scss*/
+            @include responsify(map-get($dbm_screen_size, break-xsmall)){
+                text-align: left;
+                div.dbm-nav {
+                    display: inline !important;
+                }
+            }
+            /* Using responsible bubble to set sass in the same parent component element
+               File located at _mixins.sass
+            */
+            @include responsify(map-get($dbm_screen_size, break-small)){
+                text-align: center;
+                div.dbm-nav {
+                    display: block !important;
+                }
+            }
+        }
+        /* Hover button color*/
+        li:hover {
+            background-color: palette(primary, base);
+        }
+        /* navbar list control*/
+        li > a {
+            color: white;
+            line-height: 1.5rem;
+            text-decoration: none;
+            padding: 1rem 0;
+        }
+    }
+    /*Sets navbar color and padding*/
+    background-color: palette(secondary, base);
+    padding: 0;
+}

@@ -1,0 +1,87 @@
+.navbar-nav li { 
+    text-align: left;
+    div.dbm-nav {
+        display: inline !important;
+    }
+}
+.navbar .container {
+    margin: 1rem;
+}
+/* Home page controllers*/
+.home {
+    .carousel-item {
+        padding: 1rem;
+        h1 { font-size: 2rem;}
+        h3 { font-size: 1rem;}  
+        a {
+            color: white;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+    }
+    #dbm-slider {
+        // padding: 3.5rem 0;
+        height: 700px;
+        width: 100%;
+        background-color: palette(primary, base);
+        padding-top: 2rem;
+        .slider-img {
+            margin-top: 3rem;
+        }
+    }
+}
+/* Responsive Margin and Padding*/
+.pad-topbot { padding: 3rem 1rem}
+.mar-topbot { margin: 3rem 1rem }
+/* r means responsive */
+.mar-topbot-r-2 { 
+    margin-top: 0;
+    margin-bottom: 0;
+ }
+/* Responsive Margin and Padding zero sides*/
+.pad-topbot-z { padding: 0 }
+.mar-topbot-z { margin: 0 }
+// .navbar {
+//     margin-bottom: 30rem;
+// }
+/* Sets Primary content margin to compensate navbar fixed settings */
+
+.content-img-balancer {
+    padding: 3rem;
+}
+/* Sets Pages */
+.page {
+    /* Sets pages header sizes */
+    .bg-color-posts-sizes {
+        height: 30rem;
+    }
+    /* Image icon control for the loop pages area.*/
+    .page-loops {
+        // border: solid 1px #c2c2c2;
+        h5 {
+            background-color: palette(primary, dark);
+            color: white;
+            height: 3.5rem;
+            text-align: center;
+        }
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+        position: relative;
+        height: 20rem;
+        margin: 0;
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            right: 25%;
+        }
+    }
+    padding: 0 auto 0 auto
+}
+#about {
+    text-align: center;
+    .bg-color-pages-sizes {
+        height: 20rem;
+    }
+
+}

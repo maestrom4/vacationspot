@@ -1,0 +1,19 @@
+// @function palette($palette, $tone: base) {
+//     @return map-get(map-get($dbm_palletes, $palette), $tone); }
+
+// @mixin responsify($min, $media: screen, $max: false) {
+//     @if $max {
+//         @media #{ $media} and (min-width: $min) and (max-width:$max) {
+//                 @content; }
+//         }
+//     @else { 
+//         @media #{$media} and (min-width: $min) { 
+//             @content; 
+//         }
+//     }
+// }
+// // @mixin rgbtohexify($property,$red, $green, $blue){
+// //     $val1: ceil( ( $red / 255) * 15 );
+// //     $val2: ceil( ( $green / 255 ) * 15 );
+// //     $val3: ceil( ( $blue / 255 ) * 15 );
+// //     #{ $property }: $val1+$val1+$val2+$val2+$val3+$val3;}

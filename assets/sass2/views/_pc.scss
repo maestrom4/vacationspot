@@ -1,0 +1,91 @@
+.navbar-nav li { 
+    text-align: center;
+    div.dbm-nav {
+        display: block !important;
+    }
+}
+.navbar .container {
+    margin: 0 auto;
+}
+/* Home page controllers*/
+.home {
+    .carousel-item {
+        padding: 5rem;
+        h1 { font-size: 4rem;}
+        h3 { font-size: 1.5rem;}  
+        a {
+            color: white;
+        }
+    }
+    .carousel-control-prev, .carousel-control-next {
+        width: 10%;
+    }
+    .home-slider-content {
+        text-align: left;
+    }
+    #dbm-slider {
+        height: 550px;
+        width: 100%;
+        background-color: palette(primary, base);
+        padding-top: 1.5rem;
+        .slider-img {
+            margin-top: 0;
+        }
+    }
+}
+/* Pad controller for responsive margins and paddings*/
+.pad-topbot{ padding: 6rem 1rem }
+.mar-topbot { margin: 9rem 0 }
+/* r means responsive */
+.mar-topbot-r-2 { 
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+ }
+/* Responsive Margin and Padding zero sides*/
+.pad-topbot-z { padding:3rem }
+.mar-topbot-z { margin: 3rem }
+/* Sets Primary content margin to compensate navbar fixed settings */
+
+/* Balances Content in image in an inline design example two col-lg-6 columns one for content and the other for image. */
+.content-img-balancer {
+    padding: 12rem 1rem;
+}
+/* Sets Pages */
+.page {
+    /* Sets pages header sizes */
+    .bg-color-posts-sizes {
+        height: 15rem;
+    }
+    /* Image icon control for the loop pages area.*/
+    .page-loops {
+        // border: solid 1px #c2c2c2;
+        h5 {
+            background-color: palette(primary, dark);
+            color: white;
+            height: 3.5rem;
+        }
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2),  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        position: relative;
+        margin: 1rem;
+        height: 16rem;
+        &-btn {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            right: 25%;
+        }
+        #page-loops {
+            -ms-flex: 0 0 33.3%;
+            flex: 0 0 33.3%;
+            max-width: 33.3%;
+        }
+       
+    }
+}
+#about {
+    text-align: left;
+    .bg-color-pages-sizes {
+        height: 12rem;
+    }
+ 
+}

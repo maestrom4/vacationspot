@@ -1,0 +1,271 @@
+
+@import 'component/palette';
+@import 'libs/mixins';
+@import 'component/footer';
+@import 'component/header';
+@import 'component/nav';
+@import 'libs/reset';
+
+html,
+body {
+   height:100%;
+   position: relative;
+}
+.wrapper {
+    min-height: 91%;
+    height: auto !important;
+}
+.page-service .wrapper {
+    min-height: 92%;
+    height: auto !important;
+}
+.carousel-caption {
+    bottom: 260px;
+    text-align: center;
+}
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+}
+.carousel-indicators {
+    bottom: -380px;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+.form-control {
+    border: 1px solid transparent;
+    border-bottom: 1px solid palette(primary, dark);
+    border-radius: 0;
+}
+.form-control:focus {
+    border-bottom: palette(primary, light);
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+    
+}
+.home .btn-secondary{
+    color: palette(primary, dark);
+    background-color: transparent;
+    border-color:transparent;
+}
+/* Search */
+.home .search-btn {
+    background-image: url( '../img/search_icon.jpg' );
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 24px;           /* make this the size of your image */
+    //padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+.post-type-archive-top_distinations hr:last-child {
+    display:none;
+}
+// To disable the box effects for bootstrap 4
+.home .btn-secondary.focus, .btn-secondary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
+}
+.home .btn.focus, .btn:focus {
+    outline: 0; 
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,0); 
+}
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+     background-color: transparent; 
+     border-color: transparent; 
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(108,117,125,0);
+}
+/* Top distinations */
+.home .top-distinations h2 {
+    background-color: palette(primary, dark);
+    width: 380px;
+    color: white;
+    height: 3rem;
+    margin: 0 auto;
+}
+.home .promo p span {
+    color: blue;
+    font-weight: 600;
+}
+.top-distinations h2 a {
+    text-decoration: none;
+    color: white;
+}
+.top-distinations h2 a:hover {
+    color: palette(primary, light);
+}  
+.top-distinations h2 a:visited {
+    color: palette(tertiary, base);
+} 
+/* Promos*/
+.home .jumbotron {
+    background-color: #ffffff;
+}
+.home .jumbotron-fluid, .home .jumbotron {
+    padding: 0
+}
+ /* All buttons*/
+.btn-dark {
+    color: #fff;
+    background-color: palette(tertiary, base);
+    border-color: palette(tertiary, base);
+}
+/* Partners*/
+.home .partners {
+    background-color: #F4F9FC;
+}
+.home .partners .p-logo{
+    width: 90%;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+/* Footer Widgets Section*/
+.footer-widgets ul {
+    text-decoration: none;
+    list-style: none;
+}
+.footer-widgets {
+    background-color: palette(primary, base);
+    color: white;
+}
+/* Footer Widgets Section */
+.footer-widgets section div{
+    background-color: palette(primary, dark);
+    color: white;
+}
+
+#recent-posts-3 ul li {
+    
+    border-bottom: 1px solid #636f8e;
+    padding: .5rem;
+}
+#recent-posts-3 ul li a{
+    color: white;
+}
+/* Footer Area*/
+.footer-area {
+    background-color: palette(primary, dark);
+    color: white;
+    position:relative;
+    overflow: hidden;
+}
+.footer-area > img.img-fluid {
+    position: absolute;
+    bottom: 0;
+}
+.footer-widgets section ul {
+    padding: 0;
+}
+/* Footer social icons*/
+.linkedin, .twitter, .facebook, .google-plus, .feeds {
+    background-image: url( '../img/social_icon_sprites.v3.png' );
+    display: inline-block;
+}
+.linkedin {
+    height: 45px;
+    width: 47px;
+    background-position: 1px .2px;
+}
+.twitter {
+    height: 45px;
+    width: 47px;
+    background-position: -57px .2px;
+}
+.facebook {
+    height: 45px;
+    width: 47px;
+    background-position: -118px .2px;
+}
+.google-plus {
+    height: 45px;
+    width: 47px;
+    background-position: -176px .2px;
+}
+/* Social Icon Hovers*/
+.linkedin:hover {
+    height: 45px;
+    width: 47px;
+    background-position: 1px -45px;
+}
+.twitter:hover {
+    height: 45px;
+    width: 47px;
+    background-position: -57px -45px;
+}
+.facebook:hover {
+    height: 45px;
+    width: 47px;
+    background-position: -118px -45px;
+}
+.google-plus:hover {
+    height: 45px;
+    width: 47px;
+    background-position: -176px -45px;
+}
+/* Prevent words from breaking out of container tested with wp unit test.*/
+h1,h2,h3,h4,h5,.dont-break-out {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+  
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  
+  }
+/* hide the admin bar */
+#wpadminbar { display:none !important;}
+@media screen and (min-width: 250px) {
+    @import 'views/mobile';
+    
+}
+/*Tablet*/
+@media screen and (min-width: 768px) {
+    @import 'views/tablet'; 
+    
+}
+/*PC*/
+@media screen and (min-width: 992px) {
+    @import 'views/pc';
+}
+/* Large PC*/
+@media screen and (min-width: 1200px) {
+    @import 'views/large-pc';
+}
+

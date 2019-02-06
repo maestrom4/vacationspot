@@ -1,0 +1,2 @@
+@function palette($palette, $tone: base) {
+    @return map-get(map-get($dbm_palettes, $palette), $tone); }
